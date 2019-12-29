@@ -25,13 +25,14 @@ find /usr/lib/jvm/java-1.8* | head -n 3
 
 _The output should be something like this,_
 ```
-/usr/lib/jvm/java-1.8.0-openjdk_1.8.0
+/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-2.el8_1.x86_64
 ```
 ```
 vi .bash_profile
-JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk_1.8.0
-export JAVA_HOME
-PATH=$PATH:$JAVA_HOME
+# User specific environment and startup programs
+JAVA_HOME=usr/lib/jvm/java-1.8.0-openjdk-1.8.0.232.b09-2.el8_1.x86_64
+PATH=$PATH:$JAVA_HOME:$HOME/bin
+export PATH
 # To set it permanently update your .bash_profile
 source ~/.bash_profile
 ```

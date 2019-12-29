@@ -21,7 +21,15 @@ Lets install java and set the java home
 ```sh
 java -version
 find /usr/lib/jvm/java-1.8* | head -n 3
-#JAVA_HOME=
+```
+
+_The output should be something like this,_
+```
+/usr/lib/jvm/java-1.8.0-openjdk_1.8.0
+```
+```
+vi .bash_profile
+JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk_1.8.0
 export JAVA_HOME
 PATH=$PATH:$JAVA_HOME
 # To set it permanently update your .bash_profile
